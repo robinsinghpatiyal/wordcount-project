@@ -1,0 +1,9 @@
+<h1> WORD COUNT</h1>
+<a href="{% url 'about' %}"><h5>About us</h5></a>
+
+<form action="{% url 'count' %}"> <!--count is name of the count.hmtl file given in views.py-->
+    <textarea cols="40" rows="5" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!" />
+
+</form>
